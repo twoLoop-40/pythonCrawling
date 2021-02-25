@@ -14,6 +14,6 @@ def getTitle(url):
         return None
     return title
 
-title = getTitle('http://www.pythonscraping.com/pages/page1.html')
+title = getTitle('https://www.matamath.net/views/v3/lms/overall/progress.jsp')
 print('Title could not be found') if title == None else print(title) 
     
