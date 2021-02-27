@@ -9,7 +9,7 @@ def getLinks(pageUrl):
     bs = BeautifulSoup(html, 'html.parser')
     try:
         print(bs.h1.get_text())
-        print(bs.find(id='mw-content-text').findgit All('p')[0])
+        print(bs.find(id='mw-content-text').findAll('p')[0])
         print(bs.find(id='ca-edit').find('span').find('a').attrs['href'])
     except AttributeError:
         print('This page is missing something! No worries though!')
